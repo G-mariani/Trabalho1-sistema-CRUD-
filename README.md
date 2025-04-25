@@ -1,7 +1,7 @@
 # Sistema de Gestão de Usuários
 **Gabriel Mariani Ribeiro Santos**
 
-Este projeto é um sistema web CRUD desenvolvido utilizando:
+Este projeto é um sistema web CRUD para gestão de cadastro de usuários, desenvolvido utilizando:
 
 - **Frontend:** React
 - **Backend:** Node.js com Express
@@ -11,7 +11,6 @@ Este projeto é um sistema web CRUD desenvolvido utilizando:
 
 - Node.js instalado
 - MySQL instalado e configurado
-- Git (para clonar o repositório)
 
 ## Instruções para Rodar o Projeto
 
@@ -19,3 +18,23 @@ Este projeto é um sistema web CRUD desenvolvido utilizando:
 
 ```bash
 git clone https://github.com/seuusuario/sistema-crud.git
+
+### 2. Baixar o .sql disponibilizado na entrega e importa-lo no seu SQL workbench.
+
+### 3. No seu editor acesse o Backend e rode os seguintes comandos:
+- npm install
+- npm start
+
+### 4. Após esta etapa deve receber o segiunte retorno no seu terminal:
+- Servidor rodando na porta 3001
+- Conexão com o MySQL estabelecida com sucesso!
+
+### 5. Faça o mesmo para o Frontend e será redirecionado
+
+### 6. Agora teste as funcionalidades CRUD do sistema, voce tem as seguintes opções:
+- Pagina de listagem de usuários;
+- Cadastrar (adicionar) usuário;
+- Exibir detalhes do usuário;
+- Editar informações do usuário;
+- Atualizar informações editadas;
+- Excluir usuário;
