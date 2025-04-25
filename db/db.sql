@@ -1,3 +1,11 @@
+-- Altera a senha do root (se for o seu caso)
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'PUC@1234';
+
+-- (Opcional) Cria um usuário dedicado ao seu CRUD'
+CREATE USER 'crud_user'@'localhost' IDENTIFIED BY 'crud_pass';
+GRANT ALL PRIVILEGES ON crud_db.* TO 'crud_user'@'localhost';
+FLUSH PRIVILEGES;
+
 -- Cria o banco de dados (se ainda não existir)
 CREATE DATABASE IF NOT EXISTS crud_db;
 USE crud_db;

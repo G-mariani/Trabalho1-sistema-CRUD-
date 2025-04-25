@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useParams, useHistory } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 const UserForm = () => {
   const { id } = useParams();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const [user, setUser] = useState({
     name: '',
@@ -33,7 +33,7 @@ const UserForm = () => {
       axios.put(`http://localhost:3001/api/users/${id}`, user)
         .then(response => {
           alert(response.data.message);
-          history.push('/');
+          navigate('/');
         })
         .catch(error => console.error("Erro ao atualizar usuário:", error));
     } else {
@@ -41,7 +41,7 @@ const UserForm = () => {
       axios.post('http://localhost:3001/api/users', user)
         .then(response => {
           alert(response.data.message);
-          history.push('/');
+          navigate('/');
         })
         .catch(error => console.error("Erro ao criar usuário:", error));
     }
