@@ -16,9 +16,6 @@ Este projeto é um sistema web CRUD para gestão de cadastro de usuários, desen
 
 ### 1. Clonar o Repositório
 
-```bash
-git clone https://github.com/seuusuario/sistema-crud.git
-
 ### 2. Baixar o .sql disponibilizado na entrega e importa-lo no seu SQL workbench.
 
 ### 3. No seu editor acesse o Backend e rode os seguintes comandos:
