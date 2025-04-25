@@ -1,6 +1,8 @@
 # Sistema de Gestão de Usuários
 **Gabriel Mariani Ribeiro Santos**
 
+Link do video apresentação: https://youtu.be/Z-fZP1jkz5Q
+
 Este projeto é um sistema web CRUD para gestão de cadastro de usuários, desenvolvido utilizando:
 
 - **Frontend:** React
