@@ -29,7 +29,6 @@ Este projeto é um sistema web CRUD para gestão de cadastro de usuários, desen
 ### 5. Faça o mesmo para o Frontend e será redirecionado
 
 ### 6. Agora teste as funcionalidades CRUD do sistema, voce tem as seguintes opções:
-- Pagina de listagem de usuários;
 - Cadastrar (adicionar) usuário;
 - Exibir detalhes do usuário;
 - Editar informações do usuário;
