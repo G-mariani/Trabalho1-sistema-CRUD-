@@ -11,8 +11,8 @@ app.use(express.json());
 // Configuração da conexão com o banco de dados
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'root',          // seu usuário do MySQL
-    password: 'sua_senha', // sua senha do MySQL
+    user: 'crud_user',          
+    password: 'crud_pass', 
     database: 'crud_db'
 });
 

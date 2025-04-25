@@ -1,14 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';  
 import UserList from './components/userList';
 import UserForm from './components/userForm';
-import UserDetail from './components/userDetail';
+import UserDetail from './components/userDetails';
 
 function App() {
   return (
     <Router>
       <header>
-        <h1>Sistema de Gestão de Usuários - [Seu Nome]</h1>
+        <h1>Sistema de Gestão de Usuários - [Gabriel Mariani Ribeiro Santos]</h1>
         <nav>
           <Link to="/">Lista de Usuários</Link>
           {' | '}
@@ -16,12 +16,12 @@ function App() {
         </nav>
       </header>
       <main>
-        <Switch>
-          <Route path="/" exact component={UserList} />
-          <Route path="/new" component={UserForm} />
-          <Route path="/edit/:id" component={UserForm} />
-          <Route path="/detail/:id" component={UserDetail} />
-        </Switch>
+      <Routes>
+        <Route path="/" element={<UserList />} />
+        <Route path="/new" element={<UserForm />} />
+        <Route path="/edit/:id" element={<UserForm />} />
+        <Route path="/detail/:id" element={<UserDetail />} />
+      </Routes>
       </main>
     </Router>
   );
